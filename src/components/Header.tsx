@@ -1,13 +1,15 @@
-import { Bell, Search, Menu } from 'lucide-react';
+import { Bell, Search, Menu, Sun, Moon } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
 interface HeaderProps {
   title: string;
   onMenuClick?: () => void;
+  theme: 'light' | 'dark';
+  onToggleTheme: () => void;
 }
 
-export default function Header({ title, onMenuClick }: HeaderProps) {
+export default function Header({ title, onMenuClick, theme, onToggleTheme }: HeaderProps) {
   return (
     <header className="h-16 border-b border-border flex items-center justify-between px-6 bg-background/50 backdrop-blur-sm sticky top-0 z-10">
       <div className="flex items-center gap-4">
@@ -19,7 +21,7 @@ export default function Header({ title, onMenuClick }: HeaderProps) {
         <h1 className="text-xl font-semibold text-foreground">{title}</h1>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
         <div className="relative hidden md:block">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <Input
@@ -27,6 +29,19 @@ export default function Header({ title, onMenuClick }: HeaderProps) {
             className="w-64 pl-10 bg-muted border-border input-glow"
           />
         </div>
+
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={onToggleTheme}
+          className="relative"
+        >
+          {theme === 'dark' ? (
+            <Sun className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
+          ) : (
+            <Moon className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
+          )}
+        </Button>
 
         <Button variant="ghost" size="icon" className="relative">
           <Bell className="w-5 h-5 text-muted-foreground" />

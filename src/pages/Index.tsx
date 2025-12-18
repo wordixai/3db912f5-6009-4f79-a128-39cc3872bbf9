@@ -7,6 +7,7 @@ import FansPage from '@/pages/FansPage';
 import MusicPage from '@/pages/MusicPage';
 import RevenuePage from '@/pages/RevenuePage';
 import TeamPage from '@/pages/TeamPage';
+import { useTheme } from '@/hooks/useTheme';
 
 type Page = 'dashboard' | 'events' | 'fans' | 'music' | 'revenue' | 'team' | 'settings';
 
@@ -24,6 +25,7 @@ const Index = () => {
   const [activePage, setActivePage] = useState<Page>('dashboard');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const renderPage = () => {
     switch (activePage) {
@@ -87,6 +89,8 @@ const Index = () => {
         <Header
           title={pageTitles[activePage]}
           onMenuClick={() => setMobileMenuOpen(true)}
+          theme={theme}
+          onToggleTheme={toggleTheme}
         />
         <main className="flex-1 overflow-auto">
           {renderPage()}

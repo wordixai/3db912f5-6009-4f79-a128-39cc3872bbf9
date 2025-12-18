@@ -7,9 +7,46 @@
     "tengu_prompt_suggestion": true,
     "tengu_ant_attribution_header_new": true
   },
+  "cachedDynamicConfigs": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    }
+  },
+  "cachedGrowthBookFeatures": {
+    "strawberry_granite_flag": "OFF",
+    "persimmon_marble_flag": "OFF"
+  },
   "userID": "d8a9829530116b3288152914d986514cd3c5a63ffee4383112b319000c04f1c8",
   "firstStartTime": "2025-12-18T13:56:15.474Z",
   "sonnet45MigrationComplete": true,
   "opus45MigrationComplete": true,
-  "thinkingMigrationComplete": true
+  "thinkingMigrationComplete": true,
+  "githubRepoPaths": {
+    "wordixai/3db912f5-6009-4f79-a128-39cc3872bbf9": [
+      "/app"
+    ]
+  },
+  "projects": {
+    "/app": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "src/pages/Index.tsx",
+        "index.html",
+        "tailwind.config.ts",
+        "src/index.css",
+        "package.json"
+      ],
+      "exampleFilesGeneratedAt": 1766066743686
+    }
+  }
 }
