@@ -55,7 +55,7 @@ export default function DashboardPage() {
         {/* Recent Activity */}
         <div className="lg:col-span-2 rounded-xl border border-border bg-card p-6">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-lg font-semibold text-foreground">Revenue Overview</h2>
+            <h2 className='text-foreground text-lg font-semibold'>Revenverview</h2>
             <select className="bg-muted border border-border rounded-lg px-3 py-1.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20">
               <option>Last 6 months</option>
               <option>Last year</option>
@@ -142,7 +142,7 @@ export default function DashboardPage() {
       {/* Upcoming Events */}
       <div className="rounded-xl border border-border bg-card p-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className='text-foreground text-lg font-semibold'>UpcomEvents</h2>
+          <h2 className="text-lg font-semibold text-foreground">Upcoming Events</h2>
           <button className="text-sm text-primary hover:text-primary/80 transition-colors">
             View all
           </button>
