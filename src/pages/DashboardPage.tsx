@@ -142,7 +142,7 @@ export default function DashboardPage() {
       {/* Upcoming Events */}
       <div className="rounded-xl border border-border bg-card p-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className='text-foreground text-lg font-semibold'>Upcomi Events</h2>
+          <h2 className='text-destructive text-lg font-semibold'>即将举办的演出</h2>
           <button className="text-sm text-primary hover:text-primary/80 transition-colors">
             View all
           </button>
