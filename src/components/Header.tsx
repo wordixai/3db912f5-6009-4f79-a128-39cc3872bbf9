@@ -18,7 +18,7 @@ export default function Header({ title, onMenuClick, theme, onToggleTheme }: Hea
             <Menu className="w-5 h-5" />
           </Button>
         }
-        <h1 className='text-foreground text-2xl font-semibold'>DashboardDashboard{title}</h1>
+        <h1 className='text-foreground text-2xl font-semibold'>{title}</h1>
       </div>
 
       <div className="flex items-center gap-3">
