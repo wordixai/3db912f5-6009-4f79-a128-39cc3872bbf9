@@ -113,7 +113,7 @@ export default function DashboardPage() {
         {/* Top Tracks */}
         <div className="rounded-xl border border-border bg-card p-6">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-lg font-semibold text-foreground">Top Tracks</h2>
+            <h2 className="text-lg font-semibold text-foreground">热门曲目</h2>
             <Music className="w-5 h-5 text-muted-foreground" />
           </div>
 
