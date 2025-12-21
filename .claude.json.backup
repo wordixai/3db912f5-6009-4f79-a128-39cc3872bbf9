@@ -27,5 +27,26 @@
     "wordixai/3db912f5-6009-4f79-a128-39cc3872bbf9": [
       "/app"
     ]
+  },
+  "projects": {
+    "/app": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "src/pages/Index.tsx",
+        "index.html",
+        "tailwind.config.ts",
+        "src/index.css",
+        "package.json"
+      ],
+      "exampleFilesGeneratedAt": 1766066743686
+    }
   }
 }
